@@ -74,6 +74,7 @@ module.exports = grammar({
     prefix_array: $ => choice(
       "[",
       seq("[", $._prefix_value),
+      seq("[", $._value),
       seq("[", $._value, $.trailing_comma),
       seq("[", repeat1(seq($._value, ",")), choice(seq($._value, optional($.trailing_comma)), $._prefix_value)),
     ),

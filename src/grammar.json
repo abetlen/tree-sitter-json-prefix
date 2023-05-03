@@ -394,6 +394,19 @@
             {
               "type": "SYMBOL",
               "name": "_value"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "["
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_value"
             },
             {
               "type": "SYMBOL",
